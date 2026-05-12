@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "boto3>=1.43.6",
     "logging>=0.4.9.6",
     "polars>=1.40.1",
     "pydantic>=2.13.4",
