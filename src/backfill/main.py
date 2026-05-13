@@ -1,9 +1,9 @@
 import concurrent.futures
 import logging
 
-from models.ohlcv_model import CryptoAPIResponse
-from services.api_client import CryptoAPIClient
-from services.s3_uploader import S3DataLakeUploader
+from src.backfill.models.ohlcv_model import CryptoAPIResponse
+from src.backfill.services.api_client import CryptoAPIClient
+from src.backfill.services.s3_uploader import S3DataLakeUploader
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
