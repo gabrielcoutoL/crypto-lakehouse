@@ -3,6 +3,18 @@ provider "aws" {
 }
 
 # ==========================================
+# BUCKET PARA SALVAR O tfstate
+# ==========================================
+
+terraform {
+  backend "s3" {
+    bucket = "gclauar-terraform-state"
+    key    = "crypto-pipeline/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
+
+# ==========================================
 # CAMADAS DO DATA LAKE (buckets)
 # ==========================================
 
