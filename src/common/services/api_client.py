@@ -3,7 +3,7 @@ import logging
 import requests
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from src.backfill.core.exceptions import APIConnectionError, APIRateLimitError
+from common.core.exceptions import APIConnectionError, APIRateLimitError
 
 logger = logging.getLogger(__name__)
 
