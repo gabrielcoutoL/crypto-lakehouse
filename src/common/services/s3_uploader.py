@@ -3,7 +3,7 @@ import logging
 import boto3
 from botocore.exceptions import ClientError
 
-from src.backfill.core.exceptions import S3UploadError
+from common.core.exceptions import S3UploadError
 
 logger = logging.getLogger(__name__)
 
